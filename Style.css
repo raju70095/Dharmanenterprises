@@ -6,21 +6,59 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Header Base Container */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 24px;
-    color: #000000;
-    display:inline-block;
-    
-    
+/* Alignment Wrapper */
+.site-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* Logo Styling */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Links */
+.nav-menu a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover and Active States */
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #007bff;
+}
+
 
 
 
